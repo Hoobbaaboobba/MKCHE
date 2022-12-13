@@ -5,6 +5,14 @@
     font-family: 'Jost';
 }
 
+@font-face {
+    font-family: "Nickainley";
+    src: url("fonts/Nickainley-Normal.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body
 {
     background: #F2F2F2;
@@ -94,6 +102,7 @@ body
 {
     color: #424242;
     font-size: 45px;
+    font-family: "Nickainley";
     margin: 80px 0px 10px 0;
 }
 
@@ -141,8 +150,9 @@ body
 
 .hatHeader
 {
+    font-family: 'Nickainley';
     font-size: 45px;
-    margin: 30px 0 50px 0;
+    margin: 10px 0 15px 0;
 }
 
 .addToCart
@@ -199,8 +209,9 @@ body
 
 .summerJumperHeader
 {
+    font-family: 'Nickainley';
     font-size: 45px;
-    margin: 40px 0 60px;
+    margin: 10px 0 15px;
 }
 
 .footer ul
@@ -367,6 +378,26 @@ body
     right: 0;
 }
 
+#logoSvg1
+{
+    display: block;
+}
+
+#logoSvg2
+{
+    display: none;
+}
+
+#shopper1
+{
+    display: block;
+}
+
+#shopper2
+{
+    display: none;
+}
+
 @media (max-width: 1750px)
 {
     .pullover img
@@ -415,19 +446,19 @@ body
     {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 30px;
     }
     .hats
     {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 30px;
     }
     .summerJumpers
     {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 30px;
     }
 }
 
@@ -445,4 +476,165 @@ body
     {
         display: none;
     }
+}
+
+@media (max-width: 800px)
+{
+    .pullover img
+    {
+        width: 300px;
+        height: 457.2px;
+    }
+    .addToCart
+    {
+        width: 300px;
+        height: 457.2px;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .pullover img
+    {
+        width: 250px;
+        height: 381px;
+    }
+    .addToCart
+    {
+        width: 250px;
+        height: 381px;
+    }
+    .leftNav svg
+    {
+        margin-left: 20px;
+    }
+
+    .rightNav 
+    {
+        margin-right: 0px;
+    }
+    .navbar 
+    {
+        padding: 15px 0 0 0 ;
+    }
+    .rightNav li
+    {
+        padding: 0 5px;
+    }
+    .navbar 
+    {
+        height: 40px;
+    }
+    #logoSvg1
+    {
+        display: none;
+    }
+    #logoSvg2
+    {
+        display: block  ;
+    }
+    .navbar 
+    {
+        padding: 5px 5px 0 0;
+    }
+    #shopper1
+    {
+        display: none;
+    }
+    
+    #shopper2
+    {
+        margin-top: 7px;
+        display: block;
+    }
+    #toggle::before
+    {
+        width: 20px;
+    }
+    
+    #toggle::after
+    {
+        width: 20px;
+    }
+    .pulloverHeader
+    {
+        font-size: 30px;
+        margin: 55px 0 10px;
+    }
+    .summerJumperHeader
+    {
+        font-size: 30px;
+    }
+    .hatHeader
+    {
+        font-size: 30px;
+    }
+    #sidebar
+    {
+        top: 45px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .pullover img
+    {
+        width: 200px;
+        height: 304.8px;
+    }
+    .addToCart
+    {
+        width: 200px;
+        height: 304.8px;
+    }
+    .pulloverAndHoodie
+    {
+        gap: 20px;
+    }
+    .hats
+    {
+        gap: 20px;
+    }
+    .summerJumpers
+    {
+        gap: 20px;
+    }
+    .goodsSigns p
+    {
+        font-size: 15px;
+    }
+    .pulloverHeader
+    {
+        font-size: 30px;
+    }
+    .hatHeader
+    {
+        font-size: 30px;
+    }
+    .summerJumperHeader
+    {
+        font-size: 30px;
+    }
+    .goodsSigns
+    {
+        height: 60px;
+    }   
+}
+
+@media (max-width: 450px)
+{
+    .pullover img
+    {
+        width: 180px;
+        height: 274.32px;
+    }
+    .addToCart
+    {
+        width: 180px;
+        height: 274.32px;
+    }
+    .goodsSigns p
+    {
+        font-size: 15px;
+    }  
 }
