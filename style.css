@@ -5,14 +5,6 @@
     font-family: 'Jost';
 }
 
-@font-face {
-    font-family: "Nickainley";
-    src: url("fonts/Nickainley-Normal.otf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 body
 {
     background: #F2F2F2;
@@ -102,7 +94,7 @@ body
 {
     color: #424242;
     font-size: 45px;
-    font-family: "Nickainley";
+    font-family: "jost";
     margin: 80px 0px 10px 0;
 }
 
@@ -150,7 +142,7 @@ body
 
 .hatHeader
 {
-    font-family: 'Nickainley';
+    font-family: 'jost';
     color: #424242;
     font-size: 45px;
     margin: 10px 0 15px 0;
@@ -210,7 +202,7 @@ body
 
 .summerJumperHeader
 {
-    font-family: 'Nickainley';
+    font-family: 'jost';
     font-size: 45px;
     margin: 10px 0 15px;
     color: #424242;
@@ -398,6 +390,33 @@ body
 #shopper2
 {
     display: none;
+}
+
+#pulloverPoint
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#upButton
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #bdbdbd;
+    position: fixed;
+    right: 5%;
+    bottom: 5vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#arrowUp
+{
+    transform: translateY(3px);
 }
 
 @media (max-width: 1750px)
@@ -642,5 +661,14 @@ body
     #sidebar ul li a
     {
         font-size: 15px;
+    }
+    #upButton
+    {
+        scale: 0.8;
+    }
+    
+    #arrowUp
+    {
+        transform: translateY(3px);
     }
 }

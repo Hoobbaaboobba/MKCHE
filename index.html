@@ -61,13 +61,13 @@
                 <li><a href="">Обо мне</a></li>
                 <li><a href="">Контакты</a></li>
                 <li><a href="">Корзина</a></li>
-                <li><a href="">Свитера и худи</a></li>
-                <li><a href="">Головные уборы</a></li>
-                <li><a href="">Летние накидки и прочее</a></li>
-                <li><a href=""></a></li>
+                <li><a href="#pulloverPoint">Свитера и худи</a></li>
+                <li><a href="#hatPoint">Головные уборы</a></li>
+                <li><a href="#jumperPoint">Летние накидки и прочее</a></li>
             </ul>
         </div>
         <div class="main">
+            <div id="pulloverPoint"></div>
             <p class="pulloverHeader">Свитера и худи</p>
             <div class="pulloverAndHoodie">
                 <div class="pullover">
@@ -185,7 +185,7 @@
                             </defs>
                             </svg>                                  
                     </div>
-                    <div class="goodsSigns">
+                    <div class="goodsSigns" id="hatPoint">
                         <p>Свитер “Феерия”</p>
                         <p>650 рублей</p>
                     </div>
@@ -356,13 +356,13 @@
                             </defs>
                             </svg>                                  
                     </div>
-                    <div class="goodsSigns">
+                    <div class="goodsSigns"  id="jumperPoint">
                         <p>Свитер “Феерия”</p>
                         <p>650 рублей</p>
                     </div>
                 </div>
             </div>
-            <p class="summerJumperHeader">Летние накидки и прочее</p>
+            <p class="summerJumperHeader" id="summerJumperHeader">Летние накидки и прочее</p>
             <div class="summerJumpers">
                 <div class="pullover">
                     <div class="productImg">
@@ -462,6 +462,15 @@
                 </div>
             </div>
         </div>
+        <div id="upButton">
+            <a href="#pulloverPoint" id="arrowUp">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 15L20 5L10 15" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 35V6.66667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 5V6.66667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                                       
+            </a>
+        </div>
         <div class="footer">
             <ul>
                 <li>
@@ -510,4 +519,23 @@
         sidebar.classList.toggle('active');
     }
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+    
+            window.location.hash = hash;
+        });
+        }
+    });
+    });
+    </script>
 </html>
