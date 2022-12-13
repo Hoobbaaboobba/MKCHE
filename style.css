@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 2px solid green !important; */
+    font-family: 'Jost';
+}
+
+body
+{
+    background: #F2F2F2;
+    overflow-x: hidden;
+}
+
+.navbar 
+{
+    position: fixed;
+    background: #F2F2F2;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 0 0 ;
+    z-index: 100;
+    -moz-box-shadow: 0px 4px 18px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 4px 18px 0px rgba(34, 60, 80, 0.2);
+}
+
+.leftNav svg
+{
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.rightNav 
+{
+    margin-right: 30px;
+}
+
+.rightNav ul
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.rightNav li
+{
+    cursor: pointer;
+    padding: 0 20px;
+    list-style: none;
+    font-size: 24px;
+    color: black;
+}
+
+.border-bottom 
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1px;
+    margin-top: 60px;
+}
+
+.borderItself 
+{
+    width: 95%;
+    background: rgb(224, 224, 224);
+    border-radius: 20px;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pulloverAndHoodie
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.pullover 
+{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.pulloverHeader
+{
+    color: #424242;
+    font-size: 45px;
+    margin: 80px 0px 10px 0;
+}
+
+.goodsSigns
+{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-5px);
+    height: 80px;
+}
+
+.goodsSigns p 
+{
+    font-size: 20px;
+}
+
+.hats 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.hat
+{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hat:hover .productImg
+{
+    transition: 0.3s;
+}
+
+.hat:hover .addToCart
+{
+    transition: 0.3s;
+    scale: 1;
+}
+
+
+.hatHeader
+{
+    font-size: 45px;
+    margin: 30px 0 50px 0;
+}
+
+.addToCart
+{
+    position: absolute;
+    width: 495px;
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 0;
+    transition: 0.3s;
+}
+
+.addToCart svg
+{
+    transition: .1s;
+}
+
+.addToCart svg:hover
+{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.productImg
+{
+    display: block;
+    transition: 0.3s;
+}
+
+.pullover:hover .productImg
+{
+    transition: 0.3s;
+}
+
+.pullover:hover .addToCart
+{
+    transition: 0.3s;
+    scale: 1;
+}
+
+.summerJumpers
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.jumper
+{
+    cursor: pointer;
+}
+
+.summerJumperHeader
+{
+    font-size: 45px;
+    margin: 40px 0 60px;
+}
+
+.footer ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.threeLinesBar ul
+{
+    list-style: none;
+    background: #F2F2F2;
+    padding: 20px 30px;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    height: 100vh;
+    z-index: 1000;
+    -webkit-box-shadow: -5px 8px 14px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -5px 8px 14px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: -5px 8px 14px 0px rgba(34, 60, 80, 0.2);
+}
+
+#threeLinesBar
+{
+    z-index: 1000;
+    transform: translateX(100%);
+}
+
+.threeLinesBar ul li
+{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#toggle
+{
+    right: 20px;
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle::before
+{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: black;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+#toggle::after
+{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: black;
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+
+#toggle.active::before
+{
+    transform: translateY(0px) rotate(45deg);
+}
+
+#toggle.active::after
+{
+    transform: translateY(0) rotate(-45deg);
+}
+
+#sidebar
+{
+    position: fixed;
+    top: 65px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #F2F2F2;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+#sidebar ul
+{
+    position: relative;
+}
+
+#sidebar ul li
+{
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+#sidebar ul li a
+{
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#catalog::before
+{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    transform: translateY(40px);
+    transition: 0.3s;
+}
+
+#catalog:hover::before{
+    width: 60px;
+}
+
+#payment::before
+{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+#payment:hover::before
+{
+    width: 150px;
+}
+
+#contacts::before
+{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    transform: translateY(40px);
+    transition: 0.3s;
+}
+
+#contacts:hover::before{
+    width: 70px;
+}
+
+
+#sidebar.active
+{
+    right: 0;
+}
+
+@media (max-width: 1750px)
+{
+    .pullover img
+    {
+        width: 450px;
+        height: 685.8;
+    }
+    .addToCart
+    {
+        width: 450px;
+        height: 685.8;
+    }
+}
+
+@media (max-width: 1550px)
+{
+    .pullover img
+    {
+        width: 400px;
+        height: 609.6px;
+    }
+    .addToCart
+    {
+        width: 400px;
+        height: 609.6px;
+    }
+}
+
+@media (max-width: 1400px)
+{
+    .pullover img
+    {
+        width: 350px;
+        height: 533.4px;
+    }
+    .addToCart
+    {
+        width: 350px;
+        height: 533.4px;
+    }
+}
+
+@media (max-width: 1250px)
+{
+    .pulloverAndHoodie
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .hats
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .summerJumpers
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    #catalog
+    {
+        display: none;
+    }
+    #payment
+    {
+        display: none;
+    }
+    #contacts
+    {
+        display: none;
+    }
+}
