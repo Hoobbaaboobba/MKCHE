@@ -822,9 +822,13 @@ body
         width: 180px;
         height: 274.32px;
     }
+    .goodsSigns
+    {
+        height: 60px;
+    }
     .goodsSigns p
     {
-        font-size: 15px;
+        font-size: 13px;
     }  
     #sidebar ul li a
     {
