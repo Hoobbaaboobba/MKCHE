@@ -686,7 +686,7 @@ body
 }
 
 @media (max-width: 700px)
-{
+{  
     .pullover img
     {
         width: 250px;
@@ -807,11 +807,7 @@ body
     .summerJumperHeader
     {
         font-size: 30px;
-    }
-    .goodsSigns
-    {
-        height: 60px;
-    }   
+    } 
 }
 
 @media (max-width: 450px)
