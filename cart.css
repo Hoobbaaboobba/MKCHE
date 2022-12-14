@@ -13,16 +13,20 @@
 {
     padding: 20px;
     display: flex;
-    padding: 10px 0;
-    width: 700px;
-    justify-content: space-around;
+    padding: 20px 0;
+    width: 400px;
     align-items: center;
 }
 
-.products .product span
+.products .product h3
 {
-    font-size: 15px;
-    margin-left: 10px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.products .product h2
+{
+    margin-left: 100px;
 }
 
 .trash-box
@@ -30,7 +34,7 @@
     width: 40px;
     height: 40px;
     transition: 0.3s;
-    margin-left: 380px;
+    margin-left: 170px;
     margin-top: 50px;
 }
 
@@ -62,7 +66,7 @@
 
 .total
 {
-    margin-left: 100px;
+    transform: translateX(-50px);
     margin-top: 30px;
 }
 
@@ -106,33 +110,15 @@
 {
     .products .product
     {
-        width: 600px;
+        width: 400px;
     }
     .total
     {
-        transform: translateX(-20px);
+        transform: translateX(0px);
     }
-}
-
-@media (max-width: 600px)
-{
-    .products .product
-    {
-        width: 500px;
-    }
-    .products .product span
-    {
-        font-size: 10px;
-        margin-left: 10px;
-    }
-    .total
-    {
-        transform: translateX(-20px);
-    }   
     .trash-box
     {
-        margin-left: 330px;
-        margin-top: 50px;
+        margin-left: 270px;
     }
 }
 
@@ -140,15 +126,10 @@
 {
     .products .product
     {
-        width: 400px;
-    }
-    .total
-    {
-        transform: translateX(-40px);
+        width: 350px;
     }
     .trash-box
     {
-        margin-left: 280px;
         margin-top: 50px;
     }
 }
