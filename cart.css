@@ -30,6 +30,8 @@
     width: 20px;
     height: 20px;
     transition: 0.3s;
+    margin-left: 400px;
+    margin-top: 60px;
 }
 
 .trash-box:hover 
