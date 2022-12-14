@@ -129,6 +129,11 @@
     {
         transform: translateX(-20px);
     }   
+    .trash-box
+    {
+        margin-left: 330px;
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 500px)
@@ -140,5 +145,10 @@
     .total
     {
         transform: translateX(-40px);
+    }
+    .trash-box
+    {
+        margin-left: 280px;
+        margin-top: 60px;
     }
 }
