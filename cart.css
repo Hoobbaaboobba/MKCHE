@@ -27,11 +27,11 @@
 
 .trash-box
 {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     transition: 0.3s;
-    margin-left: 400px;
-    margin-top: 60px;
+    margin-left: 380px;
+    margin-top: 50px;
 }
 
 .trash-box:hover 
@@ -132,7 +132,7 @@
     .trash-box
     {
         margin-left: 330px;
-        margin-top: 60px;
+        margin-top: 50px;
     }
 }
 
@@ -149,6 +149,6 @@
     .trash-box
     {
         margin-left: 280px;
-        margin-top: 60px;
+        margin-top: 50px;
     }
 }
