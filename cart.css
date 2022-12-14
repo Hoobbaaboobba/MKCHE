@@ -39,6 +39,12 @@
     transition: 0.3s;
 }
 
+.trash-box 
+{
+    background: none;
+    border: none;
+}
+
 .total
 {
     width: 100px;
@@ -79,7 +85,38 @@
     transition: 0.3s;
 }
 
-.emptyCart 
+#emptyCart 
 {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+#emptyCart p 
+{
+    font-size: 50px;
+}
+
+@media (max-width: 700px)
+{
+    .products .product
+    {
+        width: 500px;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .products .product
+    {
+        width: 400px;
+    }
+    .products .product span
+    {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    
 }

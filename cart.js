@@ -13,6 +13,7 @@ let products = [
         tag: 'pullover2',
         price: 1000,
         inCart: 0,
+        id: "second"
     },
     {
         name: 'Свитер "Эйфория"',
@@ -177,16 +178,17 @@ function displayCart(){
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector(".products");
     let cartCost = localStorage.getItem('totalCost');
+    let emptyCart = document.getElementById('emptyCart')
 
     if( cartItems && productContainer) {
         productContainer.innerHTML = '',
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
             <div class="product ${item.id}">
-                <img src="images/${item.tag}.png"
-                <span>${item.name}</span>
-                <span>${item.price}₽</span>
-                <button class="trash-box" onclick="removeItem()"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <img src="images/${item.tag}.png">
+                <h3>${item.name}</h3>
+                <h2>${item.price}₽</h2>
+                <button class="trash-box" onclick="removeItems()"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_27_2)">
                     <path d="M19.3342 2.9069H17.7494H14.2753V0H5.72477V2.9069H2.2507H0.665802V4.64562H2.38203L3.54118 20H16.459L17.6182 4.64562H19.3343V2.9069H19.3342ZM7.46349 1.73872H12.5366V2.9069H7.46349V1.73872ZM14.8467 18.2613H5.15355L4.12562 4.64562H5.72477H14.2753H15.8745L14.8467 18.2613Z" fill="black"/>
                     <path d="M10.6955 7.61475H9.30457V15.292H10.6955V7.61475Z" fill="black"/>
@@ -213,6 +215,8 @@ function displayCart(){
                 <button id="buyButton">Оплатить</button>
             </div>
             `
+        emptyCart.style.display = "none"
+        
     }
 }
 

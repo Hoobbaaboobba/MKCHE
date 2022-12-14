@@ -26,9 +26,9 @@
             </div>
             <div class="rightNav">
                 <ul>
-                    <li id="catalog">Каталог</li>
-                    <li id="payment">Доставка и оплата</li>
-                    <li id="contacts">Контакты</li>
+                    <li id="catalog"><a href="#">Каталог</a></li>
+                    <li id="payment"><a href="">Доставка и оплата</a></li>
+                    <li id="contacts"><a href="">Контакты</a></li>
                     <li>
                         <svg id="shopper1" width="30" height="30" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 483.1 483.1" style="enable-background:new 0 0 483.1 483.1;" xml:space="preserve">
@@ -52,14 +52,14 @@
                             </defs>
                         </svg>                                                                            
                     </li>
-                    <li id="count">
-                        <span>0</span>
-                    </li>
                     <li id="toggle">                                                    
                     </li>
                 </ul>
             </div>
         </div>
+        <li id="count">
+            <span>0</span>
+        </li>
         <div id="sidebar">
             <ul>
                 <li><a href="" id="catalogItself">Каталог</a></li>
@@ -70,8 +70,9 @@
                 <li> <a href="" id="contactsItself">Контакты</a></li>
             </ul>
         </div>
-        <div class="emptyCart">
-            <p></p>
+        <div id="emptyCart">
+            <p>Корзина пуста:(</p>
+            <a href="index.html">Перейти в каталог</a>
         </div>
         <div class="products-container">
             <div class="products">
@@ -115,6 +116,13 @@
         }
     });
     });
+</script>
+<script>
+    function removeItems()
+    {
+        localStorage.clear('productsInCart');
+        window.location.reload()
+    }
 </script>
 <script src="cart.js"></script>
 </body>

@@ -48,7 +48,12 @@ body
     cursor: pointer;
     padding: 0 20px;
     list-style: none;
-    font-size: 24px;
+    font-size: 24px; 
+}
+
+.rightNav li a 
+{
+    text-decoration: none;
     color: black;
 }
 
@@ -96,7 +101,7 @@ body
     color: #424242;
     font-size: 45px;
     font-family: "jost";
-    margin: 80px 0px 10px 0;
+    margin: 55px 0px 10px 0;
 }
 
 .goodsSigns
@@ -175,6 +180,19 @@ body
 .productImg
 {
     display: block;
+    transition: 0.3s;
+}
+
+.pullover
+{
+    transition: 0.3s;
+}
+
+.pullover:hover
+{
+    -webkit-box-shadow: 6px 6px 16px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 6px 16px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 6px 16px 0px rgba(34, 60, 80, 0.2);
     transition: 0.3s;
 }
 
@@ -602,9 +620,10 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 175px;
+    position: fixed;
+    right: 120px;
     top: 33px;
+    z-index: 100;
 }
 
 .products-container
@@ -631,6 +650,11 @@ body
     margin-top: 100px;
     justify-content: center;
     align-items: center;
+}
+
+#logoSvg1:hover #che1
+{
+    fill: pink;
 }
 
 @media (max-width: 1750px)
@@ -817,6 +841,14 @@ body
         right: 65px;
         top: 22px;
     }
+    #count span
+    {
+        right: 50px;
+    }
+    .products
+    {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 600px)
@@ -861,7 +893,6 @@ body
     } 
     .addToCart
     {
-        display: none;
     }
 }
 
