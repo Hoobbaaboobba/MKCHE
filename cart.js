@@ -20,7 +20,7 @@ let products = [
         inCart: 0,
     },
     {
-        name: 'Свитер "Kiss of Cyprus"',
+        name: 'Свитер <br>"Kiss of Cyprus"',
         tag: 'pullover4',
         price: 450,
         inCart: 0,
@@ -74,13 +74,13 @@ let products = [
         inCart: 0,
     },
     {
-        name: 'Мастер-класс "Панама',
+        name: 'Мастер-класс <br> "Панама',
         tag: 'head8',
         price: 700,
         inCart: 0,
     },
     {
-        name: 'Белая двойка дуэт "Маечка и шазюбль"',
+        name: 'Белая двойка дуэт <br> "Маечка и шазюбль"',
         tag: 'jumper1',
         price: 650,
         inCart: 0,
@@ -92,13 +92,13 @@ let products = [
         inCart: 0,
     },
     {
-        name: 'Шазюбль "Мастер-класс"',
+        name: 'Шазюбль <br> "Мастер-класс"',
         tag: 'jumper3',
         price: 115,
         inCart: 0,
     },
     {
-        name: 'Маечка "Мастер-класс"',
+        name: 'Маечка <br> "Мастер-класс"',
         tag: 'jumper4',
         price: 150,
         inCart: 0,
