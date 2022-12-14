@@ -186,8 +186,10 @@ function displayCart(){
             productContainer.innerHTML += `
             <div class="product ${item.id}">
                 <img src="images/${item.tag}.png">
-                <h3>${item.name}</h3>
-                <h2>${item.price}₽</h2>
+                <div>
+                    <h3>${item.name}</h3>
+                    <h2>${item.price}₽</h2>
+                </div>
                 <button class="trash-box" onclick="removeItems()"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_27_2)">
                     <path d="M19.3342 2.9069H17.7494H14.2753V0H5.72477V2.9069H2.2507H0.665802V4.64562H2.38203L3.54118 20H16.459L17.6182 4.64562H19.3343V2.9069H19.3342ZM7.46349 1.73872H12.5366V2.9069H7.46349V1.73872ZM14.8467 18.2613H5.15355L4.12562 4.64562H5.72477H14.2753H15.8745L14.8467 18.2613Z" fill="black"/>
