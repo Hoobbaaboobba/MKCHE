@@ -607,6 +607,32 @@ body
     top: 33px;
 }
 
+.products-container
+{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+
+
+.products
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 1750px)
 {
     .pullover img
