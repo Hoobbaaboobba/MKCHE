@@ -133,3 +133,13 @@
         margin-top: 50px;
     }
 }
+A {
+    font-family: 'Jost';
+    color: #FB8AA3; 
+   }
+   A:visited {
+    color: #cecece; 
+   }
+   A:active {
+    color: #FB8AA3; 
+   }
