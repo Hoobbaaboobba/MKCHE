@@ -1,105 +1,107 @@
 let carts = document.querySelectorAll('.addButton');
+let removeBtn = document.querySelectorAll('.trash-box')
 
 let products = [
     {
         name: 'Свитер "Опиум"',
-        tag: 'pullover1',
+        tag: 'pullover11',
         price: 650,
         inCart: 0,
+        id: "first"
     },
     {
         name: 'Худи "Душегрейка"',
-        tag: 'pullover2',
+        tag: 'pullover12',
         price: 1000,
         inCart: 0,
     },
     {
         name: 'Свитер "Эйфория"',
-        tag: 'pullover3',
+        tag: 'pullover13',
         price: 500,
         inCart: 0,
     },
     {
-        name: 'Свитер <br>"Kiss of Cyprus"',
-        tag: 'pullover4',
+        name: 'Свитер "Kiss of Cyprus"',
+        tag: 'pullover14',
         price: 450,
         inCart: 0,
     },
     {
         name: 'Свитер "Феерия"',
-        tag: 'pullover5',
+        tag: 'pullover15',
         price: 200,
         inCart: 0,
     },
     {
         name: 'Шляпа "Алина"',
-        tag: 'head1',
+        tag: 'head11',
         price: 300,
         inCart: 0,
     },
     {
         name: 'Берет "Крючком"',
-        tag: 'head2',
+        tag: 'head12',
         price: 600,
         inCart: 0,
     },
     {
         name: 'Шляпа "Из Альпаки"',
-        tag: 'head3',
+        tag: 'head13',
         price: 800,
         inCart: 0,
     },
     {
         name: 'Шляпа "Элиза"',
-        tag: 'head4',
+        tag: 'head14',
         price: 900,
         inCart: 0,
     },
     {
         name: 'Курс "Шляпа & ушанка"',
-        tag: 'head5',
+        tag: 'head15',
         price: 950,
         inCart: 0,
     },
     {
         name: 'Две шляпы по одному МК',
-        tag: 'head6',
+        tag: 'head16',
         price: 450,
         inCart: 0,
     },
     {
         name: 'Шляпа "Джулия"',
-        tag: 'head7',
+        tag: 'head17',
         price: 150,
         inCart: 0,
     },
     {
-        name: 'Мастер-класс <br> "Панама',
-        tag: 'head8',
+        name: 'Мастер-класс "Панама',
+        tag: 'head18',
         price: 700,
         inCart: 0,
     },
     {
         name: 'Белая двойка дуэт <br> "Маечка и шазюбль"',
-        tag: 'jumper1',
+        tag: 'jumper13',
         price: 650,
         inCart: 0,
     },
     {
         name: 'Туника "Эйфория"',
-        tag: 'jumper2',
+        tag: 'jumper12',
         price: 300,
         inCart: 0,
     },
     {
-        name: 'Шазюбль <br> "Мастер-класс"',
-        tag: 'jumper3',
+        name: 'Шазюбль "Мастер-класс"',
+        tag: 'jumper11',
         price: 115,
         inCart: 0,
     },
     {
-        name: 'Маечка <br> "Мастер-класс"',
-        tag: 'jumper4',
+        name: 'Маечка "Мастер-класс"',
+        tag: 'jumper14',
         price: 150,
         inCart: 0,
     },
@@ -159,7 +161,6 @@ function setItems(product) {
     localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
 
-
 function totalCost(product) {
     let cartCost = localStorage.getItem('totalCost');
 
@@ -176,7 +177,7 @@ function displayCart(){
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector(".products");
     let cartCost = localStorage.getItem('totalCost');
-    let emptyCart = document.getElementById('emptyCart')
+    let emptyCart = document.getElementById('emptyCart');
 
     if( cartItems && productContainer) {
         productContainer.innerHTML = '',
@@ -184,9 +185,10 @@ function displayCart(){
             productContainer.innerHTML += `
             <div class="product ${item.id}">
                 <img src="images/${item.tag}.png">
-                <div class="product-pullover">
-                    <h3>${item.name}</h3>
-                    <h2>${item.price}₽</h2>
+                <div class="product-pullover ${item.id}">
+                    <h4>${item.name}</h4>
+                    <h3>${item.price}₽</h3>
+                    <h5>Кол-во: ${item.inCart}</h3>
                 </div>
             </div>
                `
@@ -194,7 +196,7 @@ function displayCart(){
 
         productContainer.innerHTML += `
             <div class="total">
-                <h3 class="bascketTotal">
+                <h3 class="basketTotal">
                     Итого
                 </h3>
                 <h1>${cartCost}₽</h1>
@@ -217,11 +219,8 @@ function displayCart(){
             `
         emptyCart.style.display = "none"
         
-        productContainer.innerHTML += `
-        `
     }
 }
-
 
 onLoadCartNumbers();
 displayCart();

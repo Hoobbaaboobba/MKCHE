@@ -771,7 +771,10 @@ body
     {
         margin-right: 0px;
     }
-
+    .navbar 
+    {
+        padding: 15px 0 0 0 ;
+    }
     .rightNav li
     {
         padding: 0 5px;
@@ -779,7 +782,6 @@ body
     .navbar 
     {
         height: 40px;
-        padding: 5px 5px 0 0;
     }
     #logoSvg1
     {
@@ -788,6 +790,10 @@ body
     #logoSvg2
     {
         display: block  ;
+    }
+    .navbar 
+    {
+        padding: 5px 5px 0 0;
     }
     #shopper1
     {
@@ -884,6 +890,9 @@ body
     {
         font-size: 30px;
     } 
+    .addToCart
+    {
+    }
 }
 
 @media (max-width: 450px)
@@ -919,41 +928,4 @@ body
     {
         transform: translateY(3px);
     }
-    
-}
-.aboutmeImg img
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-.aboutmeImg img
-    {
-        width: 520px;
-        height: 840px;
-    }
-.ezrow
-{
-    margin: 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 29px;
-    width: 1485px;
-    height: 989px;
-    left: 230px;
-    top: 65px;  
-    gap: 87px;
-}
-.ezcolumn
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 652px;
-    height: 989px;
-    padding: 0px 19px;
 }

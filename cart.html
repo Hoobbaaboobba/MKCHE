@@ -26,7 +26,7 @@
             </div>
             <div class="rightNav">
                 <ul>
-                    <li id="catalog"><a href="#">Каталог</a></li>
+                    <li id="catalog"><a href="index.html">Каталог</a></li>
                     <li id="payment"><a href="">Доставка и оплата</a></li>
                     <li id="contacts"><a href="">Контакты</a></li>
                     <li>
@@ -62,16 +62,16 @@
         </li>
         <div id="sidebar">
             <ul>
-                <li><a href="" id="catalogItself">Каталог</a></li>
-                <li><a href="index.html#pulloverPoint" id="hoodie">Свитера и худи</a></li>
+                <li><a href="index.html" id="catalogItself">Каталог</a></li>
+                <li><a href="index.html#toggle" id="hoodie">Свитера и худи</a></li>
                 <li><a href="index.html#hatPoint" id="hatCatalog">Головные уборы</a></li>
                 <li><a href="index.html#jumperPoint" id="jumperCatalog">Летние накидки и прочее</a></li>
-                <li><a href="" id="about_me.html">Обо мне</a></li>
-                <li> <a href="" id="contacts.html">Контакты</a></li>
+                <li><a href="" id="aboutMe">Обо мне</a></li>
+                <li><a href="" id="contactsItself">Контакты</a></li>
             </ul>
         </div>
         <div id="emptyCart">
-            <p>Корзина пуста</p>
+            <p>Корзина пуста:(</p>
             <a href="index.html">Перейти в каталог</a>
         </div>
         <div class="products-container">
@@ -119,8 +119,9 @@
 </script>
 <script>
     function removeItems()
-    {
-        localStorage.clear();
+    {     
+        localStorage.clear('inCart');
+
         window.location.reload()
     }
 </script>
