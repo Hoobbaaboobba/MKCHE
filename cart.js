@@ -187,7 +187,7 @@ function displayCart(){
                 <img src="images/${item.tag}.png">
                 <div class="product-pullover ${item.id}">
                     <h4>${item.name}</h4>
-                    <h3>${item.price}₽</h3>
+                    <h3>${item.price * item.inCart}₽</h3>
                     <h5>Кол-во: ${item.inCart}</h3>
                 </div>
             </div>
