@@ -317,7 +317,7 @@ body
     height: 2px;
     background: black;
     transform: translateY(30px);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 #aboutMe::before
@@ -328,7 +328,7 @@ body
     height: 2px;
     background: black;
     transform: translateY(30px);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 #contactsItself::before
@@ -339,7 +339,7 @@ body
     height: 2px;
     background: black;
     transform: translateY(30px);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 #catalogItself:hover::before
@@ -409,7 +409,7 @@ body
     height: 2px;
     background: black;
     transform: translateY(40px);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 #catalog:hover::before{
@@ -439,8 +439,8 @@ body
     width: 0;
     height: 2px;
     background: black;
-    transform: translate(-138px, 30px);
-    transition: 0.2s;
+    transform: translate(-132px, 30px);
+    transition: 0.3s;
 }
 
 #hoodie:hover::after{
@@ -471,8 +471,8 @@ body
     width: 0;
     height: 2px;
     background: black;
-    transform: translate(-150px, 30px);
-    transition: 0.2s;
+    transform: translate(-142px, 30px);
+    transition: 0.3s;
 }
 
 #hatCatalog:hover::after{
@@ -504,8 +504,8 @@ body
     width: 0;
     height: 2px;
     background: black;
-    transform: translate(-238px, 30px);
-    transition: 0.2s;
+    transform: translate(-227px, 30px);
+    transition: 0.3s;
 }
 
 #jumperCatalog:hover::after{
@@ -520,7 +520,7 @@ body
     height: 2px;
     background: black;
     transform: translateY(40px);
-    transition: 0.2s;
+    transition: 0.6s;
 }
 
 #payment:hover::before
@@ -536,7 +536,7 @@ body
     height: 2px;
     background: black;
     transform: translateY(40px);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 #contacts:hover::before{
@@ -771,10 +771,7 @@ body
     {
         margin-right: 0px;
     }
-    .navbar 
-    {
-        padding: 15px 0 0 0 ;
-    }
+
     .rightNav li
     {
         padding: 0 5px;
@@ -782,6 +779,7 @@ body
     .navbar 
     {
         height: 40px;
+        padding: 5px 5px 0 0;
     }
     #logoSvg1
     {
@@ -790,10 +788,6 @@ body
     #logoSvg2
     {
         display: block  ;
-    }
-    .navbar 
-    {
-        padding: 5px 5px 0 0;
     }
     #shopper1
     {
@@ -890,9 +884,6 @@ body
     {
         font-size: 30px;
     } 
-    .addToCart
-    {
-    }
 }
 
 @media (max-width: 450px)
@@ -928,4 +919,41 @@ body
     {
         transform: translateY(3px);
     }
+    
+}
+.aboutmeImg img
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+.aboutmeImg img
+    {
+        width: 520px;
+        height: 840px;
+    }
+.ezrow
+{
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 29px;
+    width: 1485px;
+    height: 989px;
+    left: 230px;
+    top: 65px;  
+    gap: 87px;
+}
+.ezcolumn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 652px;
+    height: 989px;
+    padding: 0px 19px;
 }
