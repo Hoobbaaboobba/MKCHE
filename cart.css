@@ -33,6 +33,22 @@
     flex-direction: column;
 }
 
+.Danjo{
+    margin-bottom: 10%;
+}
+
+#emptyCart a{
+    font-size: 25px;
+    text-decoration: none;
+    color: pink; 
+}
+#emptyCart a:visited {
+    color: pink; 
+   }
+#emptyCart a:active {
+    color: lightskyblue; 
+   }
+
 .products .product h4
 {
     font-weight: lighter;
@@ -109,7 +125,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 #emptyCart p 

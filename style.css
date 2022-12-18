@@ -520,12 +520,12 @@ body
     height: 2px;
     background: black;
     transform: translateY(40px);
-    transition: 0.6s;
+    transition: 0.3s;
 }
 
 #payment:hover::before
 {
-    width: 150px;
+    width: 60px;
 }
 
 #contacts::before
@@ -650,10 +650,13 @@ body
     justify-content: center;
     align-items: center;
 }
-
+#logoSvg1 #che1{
+    transition: 0.5s;
+}
 #logoSvg1:hover #che1
 {
     fill: pink;
+    transition: 0.5s;
 }
 
 @media (max-width: 1750px)
