@@ -864,6 +864,9 @@ body
     {
         display: none;
     }
+    #emptyCart {
+        transform: translateY(-50px);
+    }
 }
 
 @media (max-width: 800px)
@@ -877,6 +880,9 @@ body
     {
         width: 300px;
         height: 457.2px;
+    }
+    #emptyCart {
+        transform: translateY(-100px);
     }
 }
 
@@ -972,6 +978,9 @@ body
     {
         margin-top: 50px;
     }
+    #emptyCart {
+        transform: translateY(-150px);
+    }
 }
 
 @media (max-width: 600px)
@@ -1014,6 +1023,9 @@ body
     {
         font-size: 30px;
     } 
+    #emptyCart {
+        transform: translateY(-200px);
+    }
 }
 
 @media (max-width: 450px)
