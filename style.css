@@ -450,6 +450,7 @@ body
 #hatCatalog
 {
     margin-left: 25px;
+    z-index: 10000;
 }
 
 #hatCatalog::before
@@ -653,10 +654,113 @@ body
 #logoSvg1 #che1{
     transition: 0.5s;
 }
+
 #logoSvg1:hover #che1
 {
     fill: pink;
     transition: 0.5s;
+}
+
+.splide__slide img
+{
+    width: 270px;
+    height: 411.48px;
+}
+
+.splide 
+{
+    width: 1200px;
+}
+
+.splide__arrows--ltr
+{
+    display: none;
+}
+
+.productInfoContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.productInfo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.pulloverInfoText
+{
+    width: 25%;
+    margin-left: 150px;
+}
+
+.productInfoImg p
+{
+    margin: 10px 0;
+}
+
+.productInfoImg
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productInfoImg button
+{
+    width: 300px;
+    height: 60px;
+    background: black;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.productInfoImg button:hover
+{
+    background: rgb(94, 94, 94);
+    transition: 0.3s;
+}
+
+.productPayment
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 350px;
+    margin-top: 10px;
+}
+
+.deliveryAndPayment p
+{
+    font-size: 40px;
+    transform: translateX(180px);
+}
+
+.deliveryAndPayment
+{
+    margin-top: 30px;
+}
+
+#goToCatalog
+{
+    text-decoration: none;
+    color: rgb(255, 159, 175);
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#goToCatalog:hover
+{
+    color: pink;
+    transition: 0.3s;
 }
 
 @media (max-width: 1750px)
@@ -699,6 +803,29 @@ body
         width: 350px;
         height: 533.4px;
     }
+    .splide 
+    {
+        width: 1000px;
+    }
+    .splide__slide img
+    {
+        width: 200px;
+        height: 304.8px;
+    }
+    .ezrow .aboutmeImg img
+    {
+        width: 400px;
+        height: 646.15px;
+    }
+    .ezcolumn p
+    {
+        font-size: 15px;
+    }
+    .ezrow
+    {
+        width: 1000px;
+        height: 500px;
+    } 
 }
 
 @media (max-width: 1250px)
