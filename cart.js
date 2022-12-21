@@ -7,37 +7,42 @@ let products = [
         tag: 'pullover11',
         price: 650,
         inCart: 0,
-        id: "first"
+        id: "pulloverOpium"
     },
     {
         name: 'Худи "Душегрейка"',
         tag: 'pullover12',
         price: 1000,
         inCart: 0,
+        id: "pulloverSoul"
     },
     {
         name: 'Свитер "Эйфория"',
         tag: 'pullover13',
         price: 500,
         inCart: 0,
+        id: "pulloverEuphoria"
     },
     {
         name: 'Свитер "Kiss of Cyprus"',
         tag: 'pullover14',
         price: 450,
         inCart: 0,
+        id: "pulloverKissOfCyprus"
     },
     {
         name: 'Свитер "Феерия"',
         tag: 'pullover15',
         price: 200,
         inCart: 0,
+        id: "pulloverFeeria"
     },
     {
         name: 'Шляпа "Алина"',
         tag: 'head11',
         price: 300,
         inCart: 0,
+        id: "hatAlina"
     },
     {
         name: 'Берет "Крючком"',
@@ -50,24 +55,28 @@ let products = [
         tag: 'head13',
         price: 800,
         inCart: 0,
+        id: "hatHook"
     },
     {
         name: 'Шляпа "Элиза"',
         tag: 'head14',
         price: 900,
         inCart: 0,
+        id: "hatAlpaka"
     },
     {
         name: 'Курс "Шляпа & ушанка"',
         tag: 'head15',
         price: 950,
         inCart: 0,
+        id: "hatElisa"
     },
     {
         name: 'Две шляпы по одному МК',
         tag: 'head16',
         price: 450,
         inCart: 0,
+        id: "hatEar"
     },
     {
         name: 'Шляпа "Джулия"',
@@ -110,6 +119,14 @@ let products = [
 for (let i = 0; i < carts.length; i++)
 {
     carts[i].addEventListener('click', () => {
+        cartNumbers(products[i]);
+        totalCost(products[i])
+    })
+}
+
+for (let i = 0; i < removeBtn.length; i++)
+{
+    removeBtn[i].addEventListener('click', () => {
         cartNumbers(products[i]);
         totalCost(products[i])
     })
@@ -183,14 +200,16 @@ function displayCart(){
         productContainer.innerHTML = '',
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
-            <div class="product ${item.id}">
-                <img src="images/${item.tag}.png">
-                <div class="product-pullover ${item.id}">
-                    <h4>${item.name}</h4>
-                    <h3>${item.price * item.inCart}₽</h3>
-                    <h5>Кол-во: ${item.inCart}</h3>
+            <a class="productLink" href="${item.id}.html">
+                <div class="product">
+                    <img src="images/${item.tag}.png">
+                    <div class="product-pullover">
+                        <h4>${item.name}</h4>
+                        <h3>${item.price * item.inCart}₽</h3>
+                        <h5>Кол-во: ${item.inCart}</h3>
+                    </div>
                 </div>
-            </div>
+            </a>
                `
         });
 
