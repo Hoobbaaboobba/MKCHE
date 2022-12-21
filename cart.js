@@ -49,70 +49,77 @@ let products = [
         tag: 'head12',
         price: 600,
         inCart: 0,
+        id: "hatHook"
     },
     {
         name: 'Шляпа "Из Альпаки"',
         tag: 'head13',
         price: 800,
         inCart: 0,
-        id: "hatHook"
+        id: "hatAlpaka"
     },
     {
         name: 'Шляпа "Элиза"',
         tag: 'head14',
         price: 900,
         inCart: 0,
-        id: "hatAlpaka"
+        id: "hatElisa"
     },
     {
         name: 'Курс "Шляпа & ушанка"',
         tag: 'head15',
         price: 950,
         inCart: 0,
-        id: "hatElisa"
+        id: "hatEar"
     },
     {
         name: 'Две шляпы по одному МК',
         tag: 'head16',
         price: 450,
         inCart: 0,
-        id: "hatEar"
+        id: "hatTwo"
     },
     {
         name: 'Шляпа "Джулия"',
         tag: 'head17',
         price: 150,
         inCart: 0,
+        id: "hatJulia"
     },
     {
         name: 'Мастер-класс "Панама',
         tag: 'head18',
         price: 700,
         inCart: 0,
+        id: "hatPanama"
     },
     {
         name: 'Белая двойка дуэт <br> "Маечка и шазюбль"',
         tag: 'jumper13',
         price: 650,
         inCart: 0,
+        id: "jumperDuo"
     },
     {
         name: 'Туника "Эйфория"',
         tag: 'jumper12',
         price: 300,
         inCart: 0,
+        id: "jumperEuphoria"
     },
     {
         name: 'Шазюбль "Мастер-класс"',
         tag: 'jumper11',
         price: 115,
         inCart: 0,
+        id: "jumperCourse"
     },
     {
         name: 'Маечка "Мастер-класс"',
         tag: 'jumper14',
         price: 150,
         inCart: 0,
+        id: "jumperMasterClass"
     },
 ]
 

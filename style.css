@@ -453,7 +453,7 @@ body
     width: 0;
     height: 2px;
     background: black;
-    transform: translate(-132px, 30px);
+    transform: translate(-140px, 30px);
     transition: 0.3s;
 }
 
@@ -486,7 +486,7 @@ body
     width: 0;
     height: 2px;
     background: black;
-    transform: translate(-142px, 30px);
+    transform: translate(-150px, 30px);
     transition: 0.3s;
 }
 
@@ -519,7 +519,7 @@ body
     width: 0;
     height: 2px;
     background: black;
-    transform: translate(-227px, 30px);
+    transform: translate(-240px, 30px);
     transition: 0.3s;
 }
 
@@ -1352,6 +1352,10 @@ body
     #arrowUp
     {
         transform: translateY(3px);
+    }
+    .productInfoImg p
+    {
+        font-size: 14px;
     }
     
 }
