@@ -706,10 +706,6 @@ body
     margin-top: 80px;
 }
 
-.pulloverInfoText h2{
-
-}
-
 .pulloverInfoText
 {
     width: 600px;
@@ -1432,8 +1428,8 @@ body
 
 .aboutmeImg img
 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
