@@ -706,11 +706,19 @@ body
     margin-top: 80px;
 }
 
+.pulloverInfoText h2{
+
+}
+
 .pulloverInfoText
 {
-    width: 550px;
+    width: 600px;
     margin-left: 100px;
-    font-size: 17.5px;
+    font-size: 18.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .productInfoImg p
@@ -859,6 +867,28 @@ body
         width: 500px;
         margin-left: 60px;
     }
+    .ezcolumn p 
+    {
+        font-size: 13px;
+    }
+    .ezcolumn
+    {
+        width: 600px;
+    }
+    .ezcolumn
+    {
+        width: 600px;
+    }
+    
+    .ezcolumn p{
+        font-size: 14px;
+    }
+    
+    #aboutmeImg
+    {
+        width: 600px;
+        height: 848.55px;
+    }
 }
 
 @media (max-width: 1250px)
@@ -909,6 +939,16 @@ body
     {
         font-size: 40px;
         transform: translateX(100px);
+    }
+    .ezcolumn
+    {
+        width: 500px;
+        height: 80px;
+        padding: 0px 19px;
+    }
+    .ezcolumn p 
+    {
+        font-size: 10px;
     }
 }
 
@@ -974,7 +1014,7 @@ body
     {
         width: 350px;
         margin-left: 50px;
-        font-size: 10.6px;
+        font-size: 11px;
     }
     .splide
     {
@@ -1359,14 +1399,7 @@ body
     }
     
 }
-.aboutmeImg img
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-.aboutmeImg img
+#aboutmeImg img
     {
         width: 520px;
         height: 840px;
@@ -1379,11 +1412,7 @@ body
     justify-content: center;
     align-items: center;
     padding: 0px 29px;
-    width: 1485px;
     height: 989px;
-    left: 230px;
-    top: 65px;  
-    gap: 87px;
 }
 .ezcolumn
 {
@@ -1391,7 +1420,20 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 652px;
+    width: 650px;
     height: 989px;
     padding: 0px 19px;
+    margin-left: 50px;
+}
+
+.ezcolumn p{
+    font-size: 18px;
+}
+
+.aboutmeImg img
+{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 }
