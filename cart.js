@@ -5,119 +5,119 @@ let products = [
     {
         name: 'Свитер "Опиум"',
         tag: 'pullover11',
-        price: 650,
+        price: 1100,
         inCart: 0,
         id: "pulloverOpium"
     },
     {
         name: 'Худи "Душегрейка"',
         tag: 'pullover12',
-        price: 1000,
+        price: 1650,
         inCart: 0,
         id: "pulloverSoul"
     },
     {
         name: 'Свитер "Эйфория"',
         tag: 'pullover13',
-        price: 500,
+        price: 1100,
         inCart: 0,
         id: "pulloverEuphoria"
     },
     {
         name: 'Свитер "Kiss of Cyprus"',
         tag: 'pullover14',
-        price: 450,
+        price: 1100,
         inCart: 0,
         id: "pulloverKissOfCyprus"
     },
     {
         name: 'Свитер "Феерия"',
         tag: 'pullover15',
-        price: 200,
+        price: 1100,
         inCart: 0,
         id: "pulloverFeeria"
     },
     {
         name: 'Шляпа "Алина"',
         tag: 'head11',
-        price: 300,
+        price: 550,
         inCart: 0,
         id: "hatAlina"
     },
     {
         name: 'Берет "Крючком"',
         tag: 'head12',
-        price: 600,
+        price: 550,
         inCart: 0,
         id: "hatHook"
     },
     {
         name: 'Шляпа "Из Альпаки"',
         tag: 'head13',
-        price: 800,
+        price: 550,
         inCart: 0,
         id: "hatAlpaka"
     },
     {
         name: 'Шляпа "Элиза"',
         tag: 'head14',
-        price: 900,
+        price: 550,
         inCart: 0,
         id: "hatElisa"
     },
     {
         name: 'Курс "Шляпа & ушанка"',
         tag: 'head15',
-        price: 950,
+        price: 750,
         inCart: 0,
         id: "hatEar"
     },
     {
         name: 'Две шляпы по одному МК',
         tag: 'head16',
-        price: 450,
+        price: 550,
         inCart: 0,
         id: "hatTwo"
     },
     {
         name: 'Шляпа "Джулия"',
         tag: 'head17',
-        price: 150,
+        price: 550,
         inCart: 0,
         id: "hatJulia"
     },
     {
         name: 'Мастер-класс "Панама',
         tag: 'head18',
-        price: 700,
+        price: 300,
         inCart: 0,
         id: "hatPanama"
     },
     {
         name: 'Белая двойка дуэт <br> "Маечка и шазюбль"',
         tag: 'jumper13',
-        price: 650,
+        price: 2200,
         inCart: 0,
         id: "jumperDuo"
     },
     {
-        name: 'Туника "Эйфория"',
+        name: 'Туника "Лотос"',
         tag: 'jumper12',
-        price: 300,
+        price: 1500,
         inCart: 0,
-        id: "jumperEuphoria"
+        id: "jumperLotos"
     },
     {
         name: 'Шазюбль "Мастер-класс"',
         tag: 'jumper11',
-        price: 115,
+        price: 1500,
         inCart: 0,
         id: "jumperCourse"
     },
     {
         name: 'Маечка "Мастер-класс"',
         tag: 'jumper14',
-        price: 150,
+        price: 700,
         inCart: 0,
         id: "jumperMasterClass"
     },
